@@ -9,7 +9,7 @@ const FarmyardController = require('./controllers/FarmyardController');
 const app = express()
 
 
-const database_url = 'mongodb+srv://admin:ofItNjEUeI2ywUTW@cluster0.u4swj.mongodb.net/?retryWrites=true&w=majority'
+const database_url = 'DATABASE_URL'
 
 mongoose.connect(database_url).then((res) => {
     app.listen(3000)
