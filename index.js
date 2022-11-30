@@ -9,7 +9,7 @@ const FarmyardController = require('./controllers/FarmyardController');
 const app = express()
 
 
-const database_url = 'DATABASE_URL'
+const database_url = 'DATABASE_URL' // <-----MODIFIER LA DATABASE_URL ICI
 
 mongoose.connect(database_url).then((res) => {
     app.listen(3000)
